@@ -1,0 +1,19 @@
+{
+  "name": "a04-wastilla",
+  "version": "1.0.0",
+  "description": "api for rsps",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a04-wastilla.git"
+  },
+  "author": "will astilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a04-wastilla/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a04-wastilla#readme"
+}
