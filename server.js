@@ -19,7 +19,6 @@ app.listen(port, () => {
 
 
 app.get('/app', (_, res) => {
-    console.log(res.statusMessage)
     res.status(200).send("200 OK");
 });
 
@@ -32,9 +31,16 @@ app.get('/app/rpsls/', (_, res) => {
 	res.status(200).send(rpsls());
 });
 
+app.get('/app/rps/play', (req, res) => {
+	res.status(200).send(rps(req.body.shot));
+});
+
+app.get('/app/rpsls/play', (req, res) => {
+	res.status(200).send(rpsls(req.body.shot));   
+});
+
 // Default endpoint returns 404 error
 app.get('*', (req, res) => {
-    console.log(res.statusMessage)
 	res.status(400).send("404 NOT FOUND");
 });
 
